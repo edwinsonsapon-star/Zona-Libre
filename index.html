@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ZONA LIBRE | Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="topbar">
+
+    🚚 Envíos nacionales |
+
+    💳 Pago seguro |
+
+    ⚡ Soporte técnico |
+
+    🛡 Garantía en productos
+
+</div>
+
+
+<header>
+    <div class="container">
+
+        <a href="index.html" class="logo-container">
+
+    <img
+        src="imagenes/logo1.jpg"
+        alt="Zona Libre"
+        class="logo">
+
+</a>
+
+        <nav>
+            <a href="#" id="btn-inicio">Inicio</a>
+            <a href="#" id="btn-ofertas">Ofertas</a>
+            <a href="contacto.html" >Contacto</a>
+        </nav>
+        <div class="user-actions">
+            
+            <!--<button class="btn-admin" onclick="window.location.href='admin.html'">
+
+                Admin
+
+            </button>-->
+
+
+            <span id="carrito">🛒 Carrito (0)</span>
+            <!--<a href="login.html" class="btn-login" href="login.html" id="btn-login">
+                Iniciar Sesión
+            </a>-->
+
+            <div id="usuario-menu">
+
+            <a
+                href="login.html"
+                class="btn-login"
+                id="btn-login">
+
+                Iniciar Sesión
+
+            </a>
+
+</div>
+
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="banner">
+        
+
+    <div class="container">
+
+        <h1>
+
+            ZONA LIBRE TECNOLOGÍA
+
+        </h1>
+
+        <p>
+
+            Laptops • Gaming • Accesorios • Audio • Video Vigilancia
+
+        </p>
+
+        <section class="search-bar">
+        <div class="container">
+            <input 
+                type="text" 
+                placeholder="Buscar producto..."
+                id="buscador"
+            >
+        </div>
+         </section>
+
+        <button
+            class="btn-banner"
+            onclick="document.getElementById('contenedor-productos').scrollIntoView({behavior:'smooth'})">
+
+            Explorar productos
+
+        </button>
+        
+        
+    </div>
+    
+
+   
+
+
+</section>
+
+    <section class="filtros">
+        <div class="container">
+            <select id="filtro-categoria">
+
+            <option value="todos">
+
+                Todas las categorías
+
+            </option>
+
+            </select>
+            <select id="filtro-precio">
+
+            <option value="todos">
+
+                Todos los precios
+
+            </option>
+
+            <option value="menor100">
+
+                Menor a Q100
+
+            </option>
+
+            <option value="100-500">
+
+                Q100 - Q500
+
+            </option>
+
+            <option value="mayor500">
+
+                Mayor a Q500
+
+            </option>
+
+
+    <select id="filtro-tamano">
+
+    <option value="todos">
+        
+    </option>
+
+    <option value="Pequeño">
+        
+    </option>
+
+    <option value="Mediano">
+        
+    </option>
+
+    <option value="Grande">
+        
+    </option>
+
+
+            
+        </div>
+    </section>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section class="carrito-panel" id="carrito-panel">
+
+    <div class="carrito-header">
+
+        <h2>🛒 Carrito</h2>
+
+        <button id="cerrar-carrito">
+            ✖
+        </button>
+
+    </div>
+
+    <div id="lista-carrito"></div>
+
+    <h3 id="total-carrito">
+        Total: Q0
+    </h3>
+
+    <button class="btn-vaciar" onclick="vaciarCarrito()">
+        Vaciar carrito
+    </button>
+
+    <button class="btn-vaciar" onclick="irCheckout()">
+        Finalizar Compra
+    </button>
+
+
+</section>
+    
+
+
+    <section class="productos">
+        <div class="container" id="contenedor-productos">
+
+        </div>
+    </section>
+
+
+</main>
+
+<footer class="footer">
+    <div>
+        <h3>ZONA LIBRE</h3>
+        <p>© 2026 Todos los derechos reservados</p>
+    </div>
+    <div>
+        <p>
+            📍 4 Caminos San Cristóbal Totonicapán
+
+            📍 Calle Pahúla San Cristóbal Totonicapán
+
+            📞 4109-0823
+
+            📞 3121-8177
+
+            📞 5980-0790
+
+            📞 5841-2979
+        </p>
+        
+    </div>
+    <div>
+        <p>
+            Instagram • Facebook • TikTok
+
+        </p>
+    </div>
+</footer>
+
+<script src="productos.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
+

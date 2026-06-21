@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - ZONA LIBRE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="contacto">
+
+    <a href="index.html" class="logo-container-contacto">
+
+        <img
+            src="imagenes/logo1.jpg"
+            alt="Zona Libre"
+            class="logo">
+
+    </a>
+
+</header>
+
+<main>
+
+    <!-- Banner -->
+
+    <section class="banner-contacto">
+
+        <div class="container">
+
+            <h1>Contáctanos</h1>
+
+            <p>
+                Estamos listos para ayudarte
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Botón volver -->
+
+    <section class="contacto-volver">
+
+        <button
+        class="btn-volver"
+        onclick="window.location.href='index.html'">
+
+            ← Volver al inicio
+
+        </button>
+
+    </section>
+
+    <!-- Contenido principal -->
+
+    <section class="contacto-contenedor">
+
+        <!-- Información -->
+
+        <div class="contacto-info">
+
+            <div class="info-card">
+
+                <h3>📧 Correo</h3>
+
+                <p>zonalibre4caminos@gmail.com</p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>📞 Teléfonos</h3>
+                <p>+502 4109-0823</p>
+                <p>+502 3121-8177</p>
+                <p>+502 5980-0790</p>
+                <p>+502 5841-2979</p>
+
+            </div>
+
+            <div class="info-card">
+
+                 <h3>🌎 Redes Sociales</h3>
+
+
+                    <a href="https://www.facebook.com/zona.libre.632884?locale=es_LA" class="red-social">
+                        Facebook
+                    </a><br>
+
+                    <a href="https://www.tiktok.com/@zona_libre4?is_from_webapp=1&sender_device=pc" class="red-social">
+                        TikTok
+                    </a><br>
+
+            </div>
+            <section class="sucursales">
+
+<section class="sucursales">
+
+    <h2>Nuestras Sucursales</h2>
+
+    <div class="mapas-grid">
+
+        <!-- Sucursal 4 Caminos -->
+        <div class="sucursal-card">
+
+            <h3>📍 Sucursal 4 Caminos</h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5015.168396978933!2d-91.44525481344421!3d14.908941632376825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858ea53e5e0cc0db%3A0x7ec3fc6bd62b7838!2sZONA%20LIBRE!5e1!3m2!1ses!2sgt!4v1782012665029!5m2!1ses!2sgt"
+                width="100%"
+                height="350"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+        <!-- Sucursal Pahúla -->
+        <div class="sucursal-card">
+
+            <h3>📍 Sucursal Pahúla</h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d517.4442668556576!2d-91.44036710059378!3d14.916976270347378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858ea5be99bacb4b%3A0x863d060322ddb025!2sZona%20Libre%20Pahula!5e1!3m2!1ses!2sgt!4v1782012780009!5m2!1ses!2sgt"
+                width="100%"
+                height="350"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+            
+
+        </div>
+
+        <!-- Formulario -->
+
+        <form class="contacto-form" id="form-contacto">
+
+            <input
+                type="text"
+                placeholder="Nombre completo"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Correo electrónico"
+                required
+            >
+
+            <textarea
+                rows="7"
+                placeholder="Escribe tu mensaje"
+                required
+            ></textarea>
+
+            <button type="submit">
+
+                Enviar mensaje
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Mapa -->
+
+
+</main>
+
+<script>
+
+document.getElementById("form-contacto")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert("✅ Mensaje enviado correctamente");
+
+    this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
